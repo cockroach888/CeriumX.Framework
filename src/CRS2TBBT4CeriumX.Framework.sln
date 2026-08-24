@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12112.369 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriumX.Framework.Bootstrapper", "CeriumX.Framework.Bootstrapper\src\CeriumX.Framework.Bootstrapper.csproj", "{76183A07-1121-4285-B12C-8638159562C0}"
 EndProject
@@ -43,13 +43,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriumX.Framework.SurfaceX.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriumX.Framework.SurfaceX.WinFormSurface", "SurfaceX\CeriumX.Framework.SurfaceX.WinFormSurface\src\CeriumX.Framework.SurfaceX.WinFormSurface.csproj", "{F64450E8-AF01-4C1B-82D2-6FA86FA3AA60}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_refs", "_refs", "{A10A9951-0156-4A1A-9347-2C060A6C686A}"
+	ProjectSection(SolutionItems) = preProject
+		_refs\appsettings.Development.json = _refs\appsettings.Development.json
+		_refs\appsettings.json = _refs\appsettings.json
+		_refs\appsettings.Release.json = _refs\appsettings.Release.json
+		_refs\NLog.config = _refs\NLog.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{76183A07-1121-4285-B12C-8638159562C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -113,6 +118,9 @@ Global
 		{F64450E8-AF01-4C1B-82D2-6FA86FA3AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F64450E8-AF01-4C1B-82D2-6FA86FA3AA60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC164211-208A-4C34-BF12-50E9360B1BD2} = {AA58581C-F124-4734-B83C-F963D2A53158}
 		{BD8C47F5-4C2A-46C7-A76F-7EB872C74590} = {AA58581C-F124-4734-B83C-F963D2A53158}
@@ -127,5 +135,8 @@ Global
 		{0B0143B2-33BE-4918-A745-30F0455E0FFA} = {41039B54-96BD-4828-8D01-EF8A686F61E5}
 		{F33F7912-30D4-4B0C-9EFC-63D8A6D9ACDF} = {EAF56D4E-66C0-4FED-9BA6-67AFD41AD447}
 		{F64450E8-AF01-4C1B-82D2-6FA86FA3AA60} = {EAF56D4E-66C0-4FED-9BA6-67AFD41AD447}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCC9E6BC-68E5-4862-AE1C-B461590DCCBA}
 	EndGlobalSection
 EndGlobal
